@@ -2,7 +2,7 @@
 
 int main(){
 
-    int i = 1;
+    int i = 1, j = 1, k = 1;
 
     printf("***XADREZ DA ESTÁCIO***\n");
     
@@ -10,7 +10,7 @@ int main(){
     printf("\nMOVIMENTACAO DO BISPO:\n");
 
     while (i <= 5){
-        printf("\nQuantidade: %i\nAção: Cima, direita\n", i);
+        printf("\nQuantidade: %i\nMovimentação: Cima, Direita\n", i);
         i++;
     }
 
@@ -18,15 +18,28 @@ int main(){
     i = 1;
     printf("\nMOVIMENTACAO DA TORRE:\n");
     do{
-        printf("\nQuantidade: %i\nAção: Direita\n", i); 
+        printf("\nQuantidade: %i\nMovimentação: Direita\n", i); 
         i++;
     } while (i <= 5);
     
     //movimentacao rainha (8 casas,esquerda) utilizando for
     printf("\nMOVIMENTACAO DA RAINHA\n");
     for (i = 1; i <= 8; i++){
-        printf("\nQuantidade: %i\nAção: Esquerda\n", i);
+        printf("\nQuantidade: %i\nMovimentação: Esquerda\n", i);
     }
+
+    printf("\nMOVIMENTACAO DO CAVALO\n");
+    for (i = 1; i <= 2; i++){
+        while(j <= 2){
+                printf("\nQuantidade: %i\nMovimentação: Baixo\n", j);
+                j++;
+            }
+        }
+        
+    do{
+        printf("\nQuantidade: %i\nMovimentação: Esquerda\n", k);
+        k++;
+    } while (k <= 1);
 
     printf("\nMovimentacao cessada! Programa encerrado.");
 
